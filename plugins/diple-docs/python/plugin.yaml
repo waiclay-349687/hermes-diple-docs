@@ -1,0 +1,7 @@
+name: diple-docs
+version: 0.1.0
+description: "Diple Docs · 圈批·文档: annotate .md documents with highlights and comments; hands them to Diple for sending."
+author: hermes-diple
+provides_hooks:
+  - post_tool_call
+  - transform_llm_output

@@ -1,0 +1,412 @@
+{
+ "about": "P2 regression-id gate (tests/desktop/regression-ids.test.mjs). ids: review finding id -> every test file that holds its test; each listed file must exist, name the id and define tests (move a test: update its entry). privateFiles: the listed files that stay private (export-public EXCLUDED_TESTS). privateOnly: the ids all of whose files are private; only they are skipped in the public tree.",
+ "privateFiles": [
+  "packages/core/test/anchor.perf.mjs",
+  "packages/core/test/anchor.test.mjs",
+  "packages/core/test/envelope.test.mjs",
+  "packages/core/test/handoff-peer.cases.json",
+  "packages/core/test/handoff-protocol.test.mjs",
+  "packages/core/test/handoff-sender-r6.test.mjs",
+  "packages/core/test/handoff-settle.cases.json",
+  "packages/core/test/markers-commonmark.test.mjs",
+  "packages/core/test/markers.test.mjs",
+  "packages/core/test/pending-list.test.mjs",
+  "packages/core/test/send-size.test.mjs",
+  "tests/desktop/capture-r2.test.mjs",
+  "tests/desktop/capture-r3.test.mjs",
+  "tests/desktop/capture-r4.test.mjs",
+  "tests/desktop/capture-r5.test.mjs",
+  "tests/desktop/capture.test.mjs",
+  "tests/desktop/contracts.test.mjs",
+  "tests/desktop/diple-r1.test.mjs",
+  "tests/desktop/diple-r2.test.mjs",
+  "tests/desktop/diple-r3.test.mjs",
+  "tests/desktop/flow-fixture.mjs",
+  "tests/desktop/handoff-r3.test.mjs",
+  "tests/desktop/handoff-r4.test.mjs",
+  "tests/desktop/handoff-r5.test.mjs",
+  "tests/desktop/public-export-r11.test.mjs",
+  "tests/desktop/public-export-split.test.mjs",
+  "tests/desktop/send.test.mjs",
+  "tests/desktop/sending.test.mjs",
+  "tests/desktop/v2t-capture.test.mjs",
+  "tests/desktop/v2x-batch-states.test.mjs",
+  "tests/desktop/v2x-drafts.test.mjs",
+  "tests/python/test_diple_r1.py",
+  "tests/python/test_diple_r2.py",
+  "tests/python/test_handoff_protocol.py",
+  "tests/python/test_handoff_r4.py",
+  "tests/python/test_handoff_r5.py"
+ ],
+ "privateOnly": [
+  "XE-01",
+  "XE-02",
+  "XE-03",
+  "XE-04",
+  "XE-05",
+  "XE-06",
+  "XE-07",
+  "XE-08",
+  "XE-09",
+  "XE-10",
+  "XE-11",
+  "XE-12",
+  "XE-13",
+  "XE-14",
+  "XE-15",
+  "XE-16",
+  "XE2-01",
+  "XE2-02",
+  "XE2-03",
+  "XE3-01",
+  "XE3-02",
+  "XE4-01",
+  "XE4-03",
+  "XE5-01",
+  "XE5-02",
+  "XR-02",
+  "XR-08",
+  "XR10-02",
+  "XR11-06",
+  "XR11-07",
+  "XR11-11",
+  "XR3-01",
+  "XR3-02",
+  "XR3-03",
+  "XR3-04",
+  "XV-01",
+  "XV-03",
+  "XV-04",
+  "XV-05",
+  "XV-06",
+  "XV9-01"
+ ],
+ "ids": {
+  "S45": [
+   "tests/desktop/review.test.mjs",
+   "tests/python/test_review_list.py"
+  ],
+  "S46": [
+   "tests/desktop/review.test.mjs",
+   "tests/python/test_review_list.py"
+  ],
+  "S47": [
+   "tests/desktop/review.test.mjs",
+   "tests/python/test_review_list.py"
+  ],
+  "S48": [
+   "tests/desktop/review-md-map.test.mjs",
+   "tests/desktop/review.test.mjs"
+  ],
+  "S49": [
+   "tests/desktop/review-md-map.test.mjs",
+   "tests/desktop/review.test.mjs"
+  ],
+  "S50": [
+   "tests/desktop/review-md-map.test.mjs",
+   "tests/desktop/review.test.mjs"
+  ],
+  "S51": [
+   "tests/desktop/review.test.mjs",
+   "tests/python/test_review_list.py"
+  ],
+  "S52": [
+   "tests/desktop/review.test.mjs",
+   "tests/python/test_review_list.py"
+  ],
+  "S53": [
+   "tests/desktop/review.test.mjs",
+   "tests/python/test_review_list.py"
+  ],
+  "S54": [
+   "tests/desktop/review.test.mjs",
+   "tests/python/test_review_list.py"
+  ],
+  "S55": [
+   "tests/desktop/review.test.mjs"
+  ],
+  "S56": [
+   "tests/desktop/review-md-map.test.mjs",
+   "tests/desktop/review.test.mjs"
+  ],
+  "S57": [
+   "tests/desktop/review.test.mjs"
+  ],
+  "S58": [
+   "tests/desktop/review-md-map.test.mjs",
+   "tests/desktop/review.test.mjs",
+   "tests/python/test_review_list.py"
+  ],
+  "S59": [
+   "tests/desktop/review.test.mjs",
+   "tests/python/test_review_list.py"
+  ],
+  "S60": [
+   "tests/desktop/review.test.mjs"
+  ],
+  "S61": [
+   "tests/python/test_review_list.py"
+  ],
+  "S62": [
+   "tests/desktop/review.test.mjs",
+   "tests/python/test_review_list.py"
+  ],
+  "XE-01": [
+   "tests/desktop/contracts.test.mjs",
+   "tests/desktop/diple-r1.test.mjs",
+   "tests/desktop/diple-r2.test.mjs",
+   "tests/desktop/send.test.mjs"
+  ],
+  "XE-02": [
+   "tests/desktop/capture-r2.test.mjs",
+   "tests/desktop/capture-r3.test.mjs",
+   "tests/desktop/capture.test.mjs",
+   "tests/desktop/diple-r1.test.mjs"
+  ],
+  "XE-03": [
+   "tests/desktop/diple-r1.test.mjs"
+  ],
+  "XE-04": [
+   "tests/desktop/diple-r1.test.mjs",
+   "tests/desktop/diple-r2.test.mjs",
+   "tests/python/test_diple_r1.py",
+   "tests/python/test_diple_r2.py"
+  ],
+  "XE-05": [
+   "packages/core/test/pending-list.test.mjs",
+   "tests/desktop/diple-r1.test.mjs",
+   "tests/desktop/send.test.mjs"
+  ],
+  "XE-06": [
+   "tests/desktop/diple-r1.test.mjs"
+  ],
+  "XE-07": [
+   "tests/desktop/contracts.test.mjs",
+   "tests/desktop/diple-r1.test.mjs",
+   "tests/desktop/diple-r2.test.mjs"
+  ],
+  "XE-08": [
+   "packages/core/test/envelope.test.mjs"
+  ],
+  "XE-09": [
+   "tests/desktop/contracts.test.mjs",
+   "tests/desktop/send.test.mjs"
+  ],
+  "XE-10": [
+   "tests/desktop/diple-r1.test.mjs",
+   "tests/desktop/diple-r2.test.mjs"
+  ],
+  "XE-11": [
+   "tests/desktop/diple-r1.test.mjs",
+   "tests/desktop/diple-r2.test.mjs"
+  ],
+  "XE-12": [
+   "packages/core/test/markers.test.mjs"
+  ],
+  "XE-13": [
+   "packages/core/test/envelope.test.mjs"
+  ],
+  "XE-14": [
+   "tests/desktop/diple-r1.test.mjs",
+   "tests/python/test_diple_r1.py"
+  ],
+  "XE-15": [
+   "tests/python/test_diple_r1.py"
+  ],
+  "XE-16": [
+   "tests/desktop/send.test.mjs"
+  ],
+  "XE2-01": [
+   "tests/python/test_diple_r2.py"
+  ],
+  "XE2-02": [
+   "packages/core/test/markers-commonmark.test.mjs"
+  ],
+  "XE2-03": [
+   "packages/core/test/handoff-protocol.test.mjs",
+   "tests/desktop/diple-r2.test.mjs",
+   "tests/desktop/diple-r3.test.mjs",
+   "tests/desktop/send.test.mjs",
+   "tests/python/test_diple_r2.py",
+   "tests/python/test_handoff_protocol.py"
+  ],
+  "XE3-01": [
+   "tests/desktop/diple-r3.test.mjs",
+   "tests/python/test_handoff_protocol.py"
+  ],
+  "XE3-02": [
+   "tests/desktop/diple-r3.test.mjs",
+   "tests/python/test_handoff_protocol.py"
+  ],
+  "XE4-01": [
+   "tests/desktop/capture-r4.test.mjs"
+  ],
+  "XE4-02": [
+   "packages/core/test/handoff-protocol.test.mjs",
+   "packages/core/test/handoff-settle.cases.json",
+   "tests/desktop/flow-fixture.mjs",
+   "tests/desktop/handoff-r4.test.mjs",
+   "tests/desktop/handoff-r5.test.mjs",
+   "tests/python/test_handoff_r4.py",
+   "tests/python/test_handoff_r5.py",
+   "tests/python/test_review_r4.py"
+  ],
+  "XE4-03": [
+   "tests/python/test_handoff_r4.py"
+  ],
+  "XE5-01": [
+   "tests/desktop/capture-r5.test.mjs",
+   "tests/desktop/capture.test.mjs"
+  ],
+  "XE5-02": [
+   "packages/core/test/handoff-peer.cases.json",
+   "tests/desktop/flow-fixture.mjs",
+   "tests/desktop/handoff-r5.test.mjs",
+   "tests/python/test_handoff_r4.py",
+   "tests/python/test_handoff_r5.py"
+  ],
+  "XE6-01": [
+   "packages/core/test/handoff-sender-r6.test.mjs",
+   "tests/desktop/handoff-r6.test.mjs",
+   "tests/python/test_handoff_r6.py"
+  ],
+  "XR-01": [
+   "tests/desktop/review.test.mjs",
+   "tests/python/test_review_backend.py",
+   "tests/python/test_review_r2.py"
+  ],
+  "XR-02": [
+   "packages/core/test/pending-list.test.mjs",
+   "tests/desktop/send.test.mjs"
+  ],
+  "XR-03": [
+   "tests/desktop/review.test.mjs",
+   "tests/python/test_review_list.py",
+   "tests/python/test_review_r2.py"
+  ],
+  "XR-04": [
+   "tests/desktop/review.test.mjs",
+   "tests/python/test_review_list.py"
+  ],
+  "XR-05": [
+   "packages/core/test/anchor.test.mjs",
+   "tests/desktop/review-md-map.test.mjs",
+   "tests/desktop/review.test.mjs",
+   "tests/python/test_review_list.py"
+  ],
+  "XR-06": [
+   "tests/desktop/review-r5.test.mjs",
+   "tests/desktop/review.test.mjs"
+  ],
+  "XR-07": [
+   "tests/desktop/review-md-map.test.mjs",
+   "tests/desktop/review.test.mjs"
+  ],
+  "XR-08": [
+   "packages/core/test/anchor.test.mjs"
+  ],
+  "XR-09": [
+   "tests/desktop/diple-r2.test.mjs",
+   "tests/desktop/review.test.mjs",
+   "tests/desktop/send.test.mjs",
+   "tests/python/test_diple_r1.py",
+   "tests/python/test_diple_r2.py",
+   "tests/python/test_review_r2.py"
+  ],
+  "XR10-01": [
+   "tests/desktop/regression-ids.test.mjs"
+  ],
+  "XR10-02": [
+   "packages/core/test/send-size.test.mjs",
+   "tests/desktop/sending.test.mjs"
+  ],
+  "XR11-06": [
+   "tests/desktop/public-export-r11.test.mjs",
+   "tests/desktop/public-export-split.test.mjs"
+  ],
+  "XR11-07": [
+   "tests/desktop/public-export-r11.test.mjs"
+  ],
+  "XR11-08": [
+   "tests/desktop/v3d3-focus-guard.test.mjs"
+  ],
+  "XR11-11": [
+   "tests/desktop/public-export-r11.test.mjs"
+  ],
+  "XR2-01": [
+   "tests/desktop/review.test.mjs",
+   "tests/python/test_review_r2.py"
+  ],
+  "XR2-02": [
+   "packages/core/test/anchor.perf.mjs",
+   "packages/core/test/anchor.test.mjs",
+   "tests/desktop/review-relocate.perf.mjs"
+  ],
+  "XR3-01": [
+   "tests/desktop/handoff-r3.test.mjs"
+  ],
+  "XR3-02": [
+   "packages/core/test/handoff-protocol.test.mjs",
+   "tests/desktop/diple-r3.test.mjs",
+   "tests/desktop/handoff-r3.test.mjs",
+   "tests/python/test_handoff_protocol.py"
+  ],
+  "XR3-03": [
+   "tests/desktop/handoff-r3.test.mjs",
+   "tests/python/test_handoff_protocol.py"
+  ],
+  "XR3-04": [
+   "packages/core/test/handoff-protocol.test.mjs",
+   "tests/desktop/handoff-r3.test.mjs"
+  ],
+  "XV-01": [
+   "tests/desktop/v2x-drafts.test.mjs"
+  ],
+  "XV-02": [
+   "tests/desktop/review.test.mjs",
+   "tests/desktop/v2x-drafts.test.mjs"
+  ],
+  "XV-03": [
+   "tests/desktop/v2x-drafts.test.mjs"
+  ],
+  "XV-04": [
+   "tests/desktop/v2x-batch-states.test.mjs"
+  ],
+  "XV-05": [
+   "tests/desktop/v2t-capture.test.mjs"
+  ],
+  "XV-06": [
+   "tests/desktop/v2x-drafts.test.mjs"
+  ],
+  "XV9-01": [
+   "tests/desktop/v2x-drafts.test.mjs"
+  ],
+  "XR11-01": [
+   "tests/desktop/v3d3-r11-draft.test.mjs"
+  ],
+  "XR11-02": [
+   "tests/desktop/v3d3-r11-draft.test.mjs"
+  ],
+  "XR11-03": [
+   "tests/desktop/v3d3-r11-draft.test.mjs"
+  ],
+  "XR11-04": [
+   "tests/desktop/v3d3-r11-draft.test.mjs"
+  ],
+  "XR11-05": [
+   "tests/desktop/v3d3-r11-draft.test.mjs"
+  ],
+  "XR11-09": [
+   "tests/desktop/v3d3-matrix-manifest.test.mjs"
+  ],
+  "XR11-10": [
+   "tests/desktop/review.test.mjs",
+   "tests/desktop/v3d3-r11-draft.test.mjs"
+  ],
+  "XV9-02": [
+   "tests/desktop/contracts.test.mjs",
+   "tests/desktop/review.test.mjs",
+   "tests/desktop/v2x-drafts.test.mjs"
+  ]
+ }
+}
