@@ -16,15 +16,15 @@ When Diple does not confirm a hand-off within 3 seconds, the page says it was **
 
 - A receipt that arrives later is announced in the window that sent it; after a reload the announcement is gone, but the list shows the right state.
 - Annotations from a hand-off that timed out in the last 10 minutes ask before being sent again (**Send anyway** replays the old hand-off; only if there is nothing to replay is a new one offered, after a second confirmation).
-- The “waiting for confirmation” timers live in the sending window. A correction that arrives more than about 11 minutes later only changes the list's state. _(issue not filed yet)_
+- The “waiting for confirmation” timers live in the sending window. A correction that arrives more than about 11 minutes later only changes the list's state. [#12](https://github.com/waiclay-349687/hermes-diple-docs/issues/12)
 
 ## The send target
 
-The target is always an existing conversation: the current one or a recent one. “New conversation” is not offered, because the SDK's `newChat()` returns no session id. _(issue not filed yet)_
+The target is always an existing conversation: the current one or a recent one. “New conversation” is not offered, because the SDK's `newChat()` returns no session id. [#6](https://github.com/waiclay-349687/hermes-diple-docs/issues/6)
 
 ## The “Open in Diple Docs” card
 
-The card is added by the `transform_llm_output` hook. The host calls every plugin's hook but keeps only the **first non-empty** result, and the order is the plugin folders' name order (not the order in `plugins.enabled`). A plugin that sorts before `diple-docs` and rewrites answers makes the card disappear; one that sorts after it loses its own rewrite. Every `.md` file the AI writes is also added to Recent documents, so it can be opened from the command palette. _(issue not filed yet)_
+The card is added by the `transform_llm_output` hook. The host calls every plugin's hook but keeps only the **first non-empty** result, and the order is the plugin folders' name order (not the order in `plugins.enabled`). A plugin that sorts before `diple-docs` and rewrites answers makes the card disappear; one that sorts after it loses its own rewrite. Every `.md` file the AI writes is also added to Recent documents, so it can be opened from the command palette. [#8](https://github.com/waiclay-349687/hermes-diple-docs/issues/8)
 
 ## <kbd>⌘⇧E</kbd> is shared with Diple
 
@@ -32,7 +32,7 @@ The host dispatches a chord to the first plugin action that registered it, and a
 
 ## Selections in the Rendered view
 
-A selection in the Rendered view is mapped back to the Markdown source. For tables, raw HTML, footnotes and some other structures the mapping can be ambiguous; the page then does not guess a position and asks you to select the passage in the **Source** view. _(issue not filed yet)_
+A selection in the Rendered view is mapped back to the Markdown source. For tables, raw HTML, footnotes and some other structures the mapping can be ambiguous; the page then does not guess a position and asks you to select the passage in the **Source** view. [#9](https://github.com/waiclay-349687/hermes-diple-docs/issues/9)
 
 ## Finding passages again after a change
 
@@ -42,9 +42,9 @@ A selection in the Rendered view is mapped back to the Markdown source. For tabl
 
 ## Files and paths
 
-- Annotation lists are keyed by the file's path, normalised literally (`a/../b.md` is `b.md`), not resolved through symbolic links: two paths to one file have two lists, and a renamed or moved file starts with an empty list. _(issue not filed yet)_
+- Annotation lists are keyed by the file's path, normalised literally (`a/../b.md` is `b.md`), not resolved through symbolic links: two paths to one file have two lists, and a renamed or moved file starts with an empty list. [#10](https://github.com/waiclay-349687/hermes-diple-docs/issues/10)
 - Reading is restricted to regular `.md` / `.markdown` files up to 5 MB of UTF-8 text. Locations that hold credentials or internal Hermes data are refused (for example `~/.ssh`, `~/.aws`, `~/.gnupg`, `~/.config/gh`, and the Hermes home's `.env`, `auth.json`, `auth/`, `mcp-tokens/`, `vault/`). The plugin's list is its own copy; the host's own read rules are applied too when the host module can be imported, and a failure there refuses the read.
-- **Files with several hard links are refused**: a hard link is an alias that a path check cannot see. Open a copy instead. _(issue not filed yet)_
+- **Files with several hard links are refused**: a hard link is an alias that a path check cannot see. Open a copy instead. [#11](https://github.com/waiclay-349687/hermes-diple-docs/issues/11)
 - Every directory on the way must be openable for reading; folders that allow search but not listing fail. Platforms without directory file descriptors (Windows) are not supported.
 - Between the check and the open, the same path can still be swapped for another single-link `.md` file in an allowed location; it is then read (it passed the same checks). A swap after opening does not change what is read.
 - The plugin allows you to open Markdown anywhere you choose; there is no workspace sandbox. A card from the AI only opens the page; it is not a permission, and every read goes through the checks above.

@@ -150,7 +150,7 @@ Todo se queda en tu equipo. El plugin no hace peticiones de red por su cuenta y 
 Las principales (lista completa con los motivos en [docs/known-limitations.md](docs/known-limitations.md)):
 
 - Para enviar hace falta Diple. Sin él, el primer envío espera 3 segundos una respuesta (10 segundos si el destino es otra conversación, que Diple abre primero); luego la página indica que Diple no responde y desactiva el envío. La lista, los comentarios, **Copiar para la IA** y **Copiar todas como Markdown** siguen funcionando.
-- El destino es siempre una conversación existente: no se puede crear una nueva desde aquí, porque `newChat()` del SDK no devuelve un id de sesión. _(issue not filed yet)_
+- El destino es siempre una conversación existente: no se puede crear una nueva desde aquí, porque `newChat()` del SDK no devuelve un id de sesión. [#6](https://github.com/waiclay-349687/hermes-diple-docs/issues/6)
 - En la vista Renderizado, una selección dentro de una tabla, HTML sin procesar o una nota al pie puede no coincidir con la fuente; entonces la página te pide que la hagas de nuevo en la vista Fuente.
 - Un archivo renombrado o movido empieza con la lista vacía.
 - Si otro plugin también reescribe las respuestas de la IA, la tarjeta «Abrir en Diple Docs» puede perderse (el anfitrión solo conserva la primera reescritura); el archivo sigue en los documentos recientes.

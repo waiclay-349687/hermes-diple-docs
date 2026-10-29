@@ -150,7 +150,7 @@ Everything stays on your machine. The plugin makes no network requests of its ow
 The main ones (full list with reasons in [docs/known-limitations.md](docs/known-limitations.md)):
 
 - Sending needs Diple. Without it, the first send waits 3 seconds for an answer (10 seconds when the target is another conversation, which Diple opens first), then the page says Diple is not responding and turns sending off; the list, the comments, **Copy for AI** and **Copy all as Markdown** keep working.
-- The send target is always an existing conversation: a new one cannot be created from here, because the SDK's `newChat()` returns no session id. _(issue not filed yet)_
+- The send target is always an existing conversation: a new one cannot be created from here, because the SDK's `newChat()` returns no session id. [#6](https://github.com/waiclay-349687/hermes-diple-docs/issues/6)
 - In the Rendered view, a selection inside a table, raw HTML or a footnote may not line up with the source; the page then asks you to select it again in the Source view.
 - A renamed or moved file starts with an empty list.
 - If another plugin also rewrites the AI's answers, the “Open in Diple Docs” card can be lost (the host keeps only the first rewrite); the file is still in Recent documents.

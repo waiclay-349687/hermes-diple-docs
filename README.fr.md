@@ -150,7 +150,7 @@ Tout reste sur votre machine. Le plugin ne fait aucune requête réseau de lui-m
 Les principales (liste complète avec les raisons dans [docs/known-limitations.md](docs/known-limitations.md)) :
 
 - L’envoi nécessite Diple. Sans lui, le premier envoi attend 3 secondes une réponse (10 secondes vers une autre conversation, que Diple ouvre d’abord), puis la page indique que Diple ne répond pas et désactive l’envoi ; la liste, les commentaires, **Copier pour l’IA** et **Tout copier en Markdown** continuent de fonctionner.
-- La destination est toujours une conversation existante : on ne peut pas en créer une nouvelle d’ici, car `newChat()` du SDK ne renvoie pas d’identifiant de session. _(issue not filed yet)_
+- La destination est toujours une conversation existante : on ne peut pas en créer une nouvelle d’ici, car `newChat()` du SDK ne renvoie pas d’identifiant de session. [#6](https://github.com/waiclay-349687/hermes-diple-docs/issues/6)
 - Dans l’affichage Rendu, une sélection dans un tableau, du HTML brut ou une note de bas de page peut ne pas correspondre à la source ; la page vous demande alors de la refaire dans l’affichage Source.
 - Un fichier renommé ou déplacé repart avec une liste vide.
 - Si un autre plugin réécrit aussi les réponses de l’IA, la carte « Ouvrir dans Diple Docs » peut se perdre (l’hôte ne garde que la première réécriture) ; le fichier reste dans les documents récents.

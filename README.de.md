@@ -150,7 +150,7 @@ Alles bleibt auf Ihrem Rechner. Das Plugin stellt selbst keine Netzwerkanfragen 
 Die wichtigsten (vollständige Liste mit Gründen in [docs/known-limitations.md](docs/known-limitations.md)):
 
 - Zum Senden wird Diple gebraucht. Ohne es wartet das erste Senden 3 Sekunden auf eine Antwort (10 Sekunden bei einer anderen Unterhaltung, die Diple erst öffnet); dann meldet die Seite, dass Diple nicht antwortet, und schaltet das Senden ab. Liste, Kommentare, **Für die KI kopieren** und **Alle als Markdown kopieren** funktionieren weiter.
-- Das Ziel ist immer eine bestehende Unterhaltung: Eine neue lässt sich von hier aus nicht anlegen, weil `newChat()` aus dem SDK keine Sitzungs-ID zurückgibt. _(issue not filed yet)_
+- Das Ziel ist immer eine bestehende Unterhaltung: Eine neue lässt sich von hier aus nicht anlegen, weil `newChat()` aus dem SDK keine Sitzungs-ID zurückgibt. [#6](https://github.com/waiclay-349687/hermes-diple-docs/issues/6)
 - In der gerenderten Ansicht passt eine Auswahl in einer Tabelle, in rohem HTML oder in einer Fußnote eventuell nicht zum Quelltext; dann bittet die Seite, sie in der Quelltext-Ansicht neu zu wählen.
 - Eine umbenannte oder verschobene Datei beginnt mit einer leeren Liste.
 - Schreibt ein anderes Plugin ebenfalls die Antworten der KI um, kann die Karte „In Diple Docs öffnen“ verloren gehen (der Host behält nur die erste Umschreibung); die Datei steht trotzdem unter den zuletzt geöffneten Dokumenten.

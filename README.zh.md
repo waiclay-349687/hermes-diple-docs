@@ -150,7 +150,7 @@ hermes plugins enable diple-docs
 主要几条（完整列表和原因见 [docs/known-limitations.md](docs/known-limitations.md)）：
 
 - 发送需要圈批。没装时，第一次发送会等 3 秒回执（发到别的会话时等 10 秒，因为圈批要先切过去），然后页面提示圈批没有响应，并关闭发送；清单、意见、「复制给 AI」和「复制全部为 Markdown」照常可用。
-- 发送目标只能是已有的会话：这里无法新建会话，因为 SDK 的 `newChat()` 不返回会话 id。_(issue not filed yet)_
+- 发送目标只能是已有的会话：这里无法新建会话，因为 SDK 的 `newChat()` 不返回会话 id。[#6](https://github.com/waiclay-349687/hermes-diple-docs/issues/6)
 - 在排版视图里，表格、原始 HTML 或脚注里的选区可能对不上源码；这时页面会请你切到源码视图重新选。
 - 文件改名或移动后，清单从空开始。
 - 如果另一个插件也会改写 AI 的回答，「用圈批·文档打开」卡片可能丢失（宿主只保留第一个改写结果）；文件仍然在「最近的文档」里。
